@@ -16,7 +16,7 @@ plt.plot(time, amplitude_sin, color='b')
 # Plot a cosine wave of period and amplitude
 plt.plot(time, amplitude_cos, color='g')
 
-# Give a title for the sine wave plot
+# Give the title
 plt.title('Sine Wave and Cosine Wave')
 
 # Generate an x axis label
