@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Get x values of the sine wave
-time = np.arange(0, 10, 0.1)
+time = np.arange(0, 2*np.pi, 0.01)
 
 # Amplitude of the sine wave is the value of sin(time)
 amplitude_sin = np.sin(time)
