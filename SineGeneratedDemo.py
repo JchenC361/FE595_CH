@@ -10,6 +10,9 @@ amplitude_sin = np.sin(time)
 # Amplitude of the sine wave is the value of cos(time)
 amplitude_cos = np.cos(time)
 
+# Limit the range of y axis between -1 to 1.
+plt.ylim((-1, 1))
+
 # Plot a sine wave of period and amplitude
 plt.plot(time, amplitude_sin, color='b')
 
