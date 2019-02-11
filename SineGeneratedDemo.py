@@ -28,5 +28,14 @@ plt.ylabel('Amplitudes are sin(time) and cos(time).')
 plt.grid(True)
 plt.axhline(y=0, color='k')
 
+# Plot tangent line.
+plt.plot(time, tan, color='grey')
+
+# Generate figure before plt.show in order to avoid outputting blank image.
+fig = plt.gcf()
+
+# Save the created image in your local directory.
+fig.savefig('D:/SinCosTan.png')
+
 # Show the graph
 plt.show()
