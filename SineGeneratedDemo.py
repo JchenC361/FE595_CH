@@ -10,6 +10,9 @@ amplitude_sin = np.sin(time)
 # Amplitude of the sine wave is the value of cos(time)
 amplitude_cos = np.cos(time)
 
+# Amplitude of the sine wave is the value of cos(time)
+amplitude_tan = np.tan(time)
+
 # Limit the range of y axis between -1 to 1.
 plt.ylim((-1, 1))
 
@@ -17,22 +20,22 @@ plt.ylim((-1, 1))
 plt.plot(time, amplitude_sin, color='b')
 
 # Plot a cosine wave of period and amplitude
-plt.plot(time, amplitude_cos, color='g')
+plt.plot(time, amplitude_cos, color='r')
+
+# Plot a tangent wave of period and amplitude
+plt.plot(time, amplitude_tan, color='y')
 
 # Give the title
-plt.title('Sine Wave and Cosine Wave')
+plt.title('Sine Wave, Cosine Wave and Tangent Wave.')
 
 # Generate an x axis label
 plt.xlabel('Time')
 
 # Generate a y axis label
-plt.ylabel('Amplitudes are sin(time) and cos(time).')
+plt.ylabel('Amplitudes are sin(time), cos(time) and tan(time).')
 
 plt.grid(True)
 plt.axhline(y=0, color='k')
-
-# Plot tangent line.
-plt.plot(time, tan, color='grey')
 
 # Generate figure before plt.show in order to avoid outputting blank image.
 fig = plt.gcf()
